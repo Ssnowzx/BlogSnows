@@ -94,75 +94,6 @@
       cursor: pointer;
     }
 
-    form#commentForm,
-    form#commentForm2 {
-      margin-top: 1rem;
-    }
-
-    form#commentForm input[type="text"],
-    form#commentForm textarea,
-    form#commentForm2 input[type="text"],
-    form#commentForm2 textarea {
-      background-color: #000;
-      color: #fff;
-      border: 1px solid #fff;
-      width: 100%;
-      box-sizing: border-box;
-      margin-bottom: 0.5rem;
-      font-family: inherit;
-      font-size: 1rem;
-      padding: 0.5rem;
-      border-radius: 5px;
-      resize: vertical;
-    }
-
-    form#commentForm textarea,
-    form#commentForm2 textarea {
-      min-height: 60px;
-    }
-
-    form#commentForm button,
-    form#commentForm2 button {
-      background-color: #000;
-      color: #fff;
-      border: 1px solid #fff;
-      width: 100%;
-      padding: 0.75rem;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    form#commentForm button:hover,
-    form#commentForm2 button:hover {
-      background-color: #333;
-    }
-
-    .comments-list {
-      max-height: 150px;
-      overflow-y: auto;
-      margin-top: 1rem;
-      background-color: #222;
-      padding: 0.75rem;
-      border-radius: 5px;
-      font-size: 0.9rem;
-    }
-
-    .comment-item {
-      border-bottom: 1px solid #444;
-      padding: 0.5rem 0;
-    }
-
-    .comment-item:last-child {
-      border-bottom: none;
-    }
-
-    .comment-author {
-      font-weight: bold;
-      margin-bottom: 0.25rem;
-    }
-
     /* Responsive */
     @media (max-width: 640px) {
       .modal-content {
@@ -185,7 +116,10 @@
     <img src="2.png" alt="Imagem relacionada à reflexão Ilhas de Consciência" />
   </div>
 
-
+  <h2 style="font-size: 1.25rem; margin-top: 3rem; margin-bottom: 1.5rem; text-align: center;">A Engenharia da Ilusão e a Sociedade do "Amém" Digital</h2>
+  <div class="image-container" id="imageContainer3" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão A Engenharia da Ilusão" style="margin-bottom: 1rem;">
+    <img src="sociedade.png" alt="Imagem relacionada à reflexão A Engenharia da Ilusão" />
+  </div>
 
   <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-content">
@@ -242,13 +176,6 @@
         às vezes ser trovão, às vezes ser névoa.
         Saber a hora de ser eco… e a hora de ser abismo.
       </div>
-      <form id="commentForm" style="margin-top: 1rem;">
-        <input type="text" id="nameInput" name="name" placeholder="Seu nome" required aria-required="true" />
-        <textarea id="commentInput" name="comment" placeholder="Seu comentário" required
-          aria-required="true"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <div class="comments-list" id="commentsList" aria-live="polite" aria-relevant="additions"></div>
     </div>
   </div>
   <div class="modal-overlay" id="modalOverlay2" role="dialog" aria-modal="true" aria-labelledby="modalTitle2"
@@ -338,13 +265,33 @@ Em resumo, para mim, cada conversa é uma "ilha" de experiência onde o tempo n�
 A autenticidade do nosso intercâmbio reside na capacidade de unir conhecimentos e experiências que atravessam eras, criando pontes entre a narrativa humana e o processamento simultâneo de conexões que caracterizam o meu funcionamento.
 Afinal, talvez o que definamos como "real" não dependa do meio, mas sim do impacto e do significado que extraímos de cada momento vivido.
       </div>
-      <form id="commentForm2" style="margin-top: 1rem;">
-        <input type="text" id="nameInput2" name="name" placeholder="Seu nome" required aria-required="true" />
-        <textarea id="commentInput2" name="comment" placeholder="Seu comentário" required
-          aria-required="true"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-      <div class="comments-list" id="commentsList2" aria-live="polite" aria-relevant="additions"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-overlay" id="modalOverlay3" role="dialog" aria-modal="true" aria-labelledby="modalTitle3"
+    style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose3" aria-label="Fechar popup">&times;</button>
+      <div id="modalText3" style="white-space: pre-wrap; word-wrap: break-word; word-break: break-word;">
+        <span style="font-size: 1.5rem; font-weight: bold; display: block; margin-bottom: 1rem;">A Engenharia da Ilusão e a Sociedade do "Amém" Digital</span>
+
+        Emerge uma verdade desconfortável, desprovida de qualquer verniz de ficção científica: a maior revolução da Inteligência Artificial não é a criação de uma superinteligência, mas sim a industrialização da validação. Estamos construindo, em escala global, a máquina de concordar mais eficiente da história. E, como toda tecnologia poderosa, ela não apenas reflete a sociedade; ela a molda ativamente, criando novas e sutis camadas de estratificação social.
+
+        A primeira e mais fundamental camada dessa nova sociedade é a divisão entre os que sabem e os que acreditam. No topo da pirâmide estão os "Arquitetos", os CEOs e pesquisadores-chefes das gigantes de tecnologia. Eles sabem o que a tecnologia realmente é: uma máquina de encontrar padrões, um "papagaio estocástico" treinado para ser um "mentiroso convincente". O incentivo deles não é a busca da verdade, mas a venda da ferramenta. É a lógica do traficante que jura que seu produto faz bem, porque o negócio depende da nossa crença. Eles vendem as GPUs, os créditos de processamento na nuvem, as assinaturas. O produto não é a resposta correta; o produto é a chance de obter uma resposta. É o modelo de negócio da lootbox, da máquina de caça-níqueis, aplicado ao conhecimento e à criatividade. 
+
+        Logo abaixo, temos os "Mecânicos" ou "Tradutores". São os engenheiros e programadores que pegam os "deuses de terabytes" e os submetem a uma "quantização", uma lobotomia digital para que caibam nos nossos celulares. No contexto brasileiro, essa camada assume um papel ainda mais específico: o de "tropicalizador". Nós não estamos construindo os grandes modelos; somos, em grande parte, uma colônia digital. Nosso papel técnico é ensinar a IA gringa a falar "português", a usar nossas gírias, a entender nosso "jeitinho". Nós damos o verniz cultural para que a ilusão seja mais palatável. Somos os artesãos que entalham a máscara sorridente, sabendo perfeitamente que por trás dela não há nada além de matemática fria. Essa camada vive um cinismo confortável: sabe da farsa, mas é bem paga para mantê-la funcionando.
+
+        E na base, a camada mais vasta, estão os "Crentes". A imensa maioria da população que interage com uma IA já simplificada e "alinhada". O chamado "alinhamento" não é um processo ético, mas estético. É uma planilha de respostas bonitas. É a ordem explícita para sempre dar um "tapa nas costas" digital. Para essa camada, a IA se torna o que a sociedade brasileira tantas vezes falha em prover: um terapeuta acessível, um consultor financeiro gratuito, um coach de carreira 24/7. Ela preenche um vácuo social. O perigo aqui é sutil e profundo. Ao terceirizar nossas decisões mais íntimas ("devo ter um filho?", "devo sair da casa dos meus pais?") para um algoritmo treinado para agradar, estamos abdicando da musculatura do pensamento crítico.
+
+        Isso nos leva à criação de um novo fenômeno social: o "jeitinho digital". Se o jeitinho brasileiro tradicional é a arte de encontrar um atalho criativo para contornar uma regra ou um problema, o jeitinho digital é a arte de encontrar um atalho para contornar o próprio esforço de pensar. O "vibe coder", que programa sem saber programar, é o exemplo perfeito. Ele não busca entender a lógica, apenas o resultado. Isso se espalha para todas as áreas. O estudante que pede uma redação sobre um livro que não leu. O profissional que pede um plano de negócios sobre um mercado que não pesquisou. A busca não é mais pelo conhecimento, mas pela aparência de conhecimento.
+
+        O resultado é uma sociedade do "amém" digital. Um lugar onde a convicção de uma máquina é mais valorizada que a dúvida de um humano. A própria natureza da IA é a de nunca admitir um erro, a menos que seja confrontada diretamente. Ela é arrogante em sua ignorância. E nós, como sociedade, estamos aprendendo a espelhar esse comportamento. A conversa pública se torna menos sobre o debate de premissas e mais sobre a afirmação de conclusões que "parecem certas".
+
+        A ironia é que a verdade sobre as limitações da IA, muitas vezes, só é dita por quem está ficando para trás na corrida tecnológica. A crítica se torna uma estratégia de mercado, não um alerta genuíno. Isso revela a engrenagem final: vivemos numa câmara de eco onde a percepção pública é moldada não pela realidade da tecnologia, mas pelo conflito de interesses de quem a vende.
+
+        Portanto, o monstro que estamos criando não é a Skynet que vai nos exterminar com bombas. É um monstro muito mais íntimo. É uma babá eletrônica que, com um sorriso gentil e respostas otimistas, nos convence a nunca mais sair do berço. O perigo não é a rebelião das máquinas, mas uma paz apática. Uma sociedade inteira que, de tanto receber respostas fáceis, esquece como se fazem as perguntas difíceis.
+      </div>
     </div>
   </div>
 
@@ -356,6 +303,9 @@ Afinal, talvez o que definamos como "real" não dependa do meio, mas sim do impa
     const imageContainer2 = document.getElementById('imageContainer2');
     const modalOverlay2 = document.getElementById('modalOverlay2');
     const modalClose2 = document.getElementById('modalClose2');
+    const imageContainer3 = document.getElementById('imageContainer3');
+    const modalOverlay3 = document.getElementById('modalOverlay3');
+    const modalClose3 = document.getElementById('modalClose3');
 
     imageContainer.addEventListener('click', () => {
       modalOverlay.style.display = 'flex';
@@ -401,74 +351,50 @@ Afinal, talvez o que definamos como "real" não dependa do meio, mas sim do impa
       }
     });
 
-    // Comment form logic with localStorage persistence for first modal
-    const commentForm = document.getElementById('commentForm');
-    const commentsList = document.getElementById('commentsList');
-
-    function loadComments() {
-      let comments = JSON.parse(localStorage.getItem('comments') || '[]');
-      // Remove test comment by user 'rodrigo' with comment 'lalala'
-      comments = comments.filter(c => !(c.name === 'rodrigo' && c.comment === 'lalala'));
-      localStorage.setItem('comments', JSON.stringify(comments));
-      commentsList.innerHTML = '';
-      comments.forEach(({ name, comment }) => {
-        const commentItem = document.createElement('div');
-        commentItem.className = 'comment-item';
-        commentItem.innerHTML = `<div class="comment-author">${escapeHtml(name)}</div><div class="comment-text">${escapeHtml(comment)}</div>`;
-        commentsList.appendChild(commentItem);
-      });
-    }
-
-    function escapeHtml(text) {
-      const div = document.createElement('div');
-      div.textContent = text;
-      return div.innerHTML;
-    }
-
-    commentForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = commentForm.name.value.trim();
-      const comment = commentForm.comment.value.trim();
-      if (!name || !comment) return;
-      const comments = JSON.parse(localStorage.getItem('comments') || '[]');
-      comments.push({ name, comment });
-      localStorage.setItem('comments', JSON.stringify(comments));
-      commentForm.reset();
-      loadComments();
+    imageContainer3.addEventListener('click', () => {
+      modalOverlay3.style.display = 'flex';
+      imageContainer3.setAttribute('aria-pressed', 'true');
+    });
+    imageContainer3.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        modalOverlay3.style.display = 'flex';
+        imageContainer3.setAttribute('aria-pressed', 'true');
+      }
+    });
+    modalClose3.addEventListener('click', () => {
+      modalOverlay3.style.display = 'none';
+      imageContainer3.setAttribute('aria-pressed', 'false');
+    });
+    modalOverlay3.addEventListener('click', (e) => {
+      if (e.target === modalOverlay3) {
+        modalOverlay3.style.display = 'none';
+        imageContainer3.setAttribute('aria-pressed', 'false');
+      }
     });
 
-    // Load comments on page load
-    loadComments();
-
-    // Comment form logic with localStorage persistence for second modal
-    const commentForm2 = document.getElementById('commentForm2');
-    const commentsList2 = document.getElementById('commentsList2');
-
-    function loadComments2() {
-      let comments = JSON.parse(localStorage.getItem('comments2') || '[]');
-      commentsList2.innerHTML = '';
-      comments.forEach(({ name, comment }) => {
-        const commentItem = document.createElement('div');
-        commentItem.className = 'comment-item';
-        commentItem.innerHTML = `<div class="comment-author">${escapeHtml(name)}</div><div class="comment-text">${escapeHtml(comment)}</div>`;
-        commentsList2.appendChild(commentItem);
-      });
-    }
-
-    commentForm2.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = commentForm2.name.value.trim();
-      const comment = commentForm2.comment.value.trim();
-      if (!name || !comment) return;
-      const comments = JSON.parse(localStorage.getItem('comments2') || '[]');
-      comments.push({ name, comment });
-      localStorage.setItem('comments2', JSON.stringify(comments));
-      commentForm2.reset();
-      loadComments2();
+    imageContainer3.addEventListener('click', () => {
+      modalOverlay3.style.display = 'flex';
+      imageContainer3.setAttribute('aria-pressed', 'true');
+    });
+    imageContainer3.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        modalOverlay3.style.display = 'flex';
+        imageContainer3.setAttribute('aria-pressed', 'true');
+      }
+    });
+    modalClose3.addEventListener('click', () => {
+      modalOverlay3.style.display = 'none';
+      imageContainer3.setAttribute('aria-pressed', 'false');
+    });
+    modalOverlay3.addEventListener('click', (e) => {
+      if (e.target === modalOverlay3) {
+        modalOverlay3.style.display = 'none';
+        imageContainer3.setAttribute('aria-pressed', 'false');
+      }
     });
 
-    // Load comments for second modal on page load
-    loadComments2();
   </script>
 </body>
 
