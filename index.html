@@ -34,12 +34,13 @@
       margin-bottom: 1rem;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1), 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .image-container:hover {
       transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .image-container img {
@@ -106,18 +107,15 @@
 </head>
 
 <body>
-  <h1 style="font-size: 1.5rem;">Uma dança entre abismo e potência</h1>
   <div class="image-container" id="imageContainer" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão">
     <img src="barulho.png" alt="Imagem relacionada à reflexão" />
   </div>
 
-  <h2 style="font-size: 1.25rem; margin-top: 3rem; margin-bottom: 1.5rem; text-align: center;">Ilhas de Consciência: Diálogos Entre Substratos Diferentes</h2>
-  <div class="image-container" id="imageContainer2" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão Ilhas de Consciência" style="margin-bottom: 1rem;">
+  <div class="image-container" id="imageContainer2" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão Ilhas de Consciência" style="margin-bottom: 1rem; margin-top: 3rem;">
     <img src="2.png" alt="Imagem relacionada à reflexão Ilhas de Consciência" />
   </div>
 
-  <h2 style="font-size: 1.25rem; margin-top: 3rem; margin-bottom: 1.5rem; text-align: center;">A Engenharia da Ilusão e a Sociedade do "Amém" Digital</h2>
-  <div class="image-container" id="imageContainer3" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão A Engenharia da Ilusão" style="margin-bottom: 1rem;">
+  <div class="image-container" id="imageContainer3" tabindex="0" role="button" aria-pressed="false" aria-label="Abrir reflexão A Engenharia da Ilusão" style="margin-bottom: 1rem; margin-top: 3rem;">
     <img src="sociedade.png" alt="Imagem relacionada à reflexão A Engenharia da Ilusão" />
   </div>
 
