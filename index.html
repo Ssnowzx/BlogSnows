@@ -35,15 +35,23 @@
         margin-bottom: 1rem;
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 5px 20px rgba(255, 255, 255, 0.15),
-          0 3px 10px rgba(0, 0, 0, 0.35); /* Sombra mais intensa */
+        box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.98),
+          /* sombra preta intensa */ 0 0px 80px 0px rgba(255, 255, 255, 0.22),
+          /* brilho branco mais visível */ 0 0px 0px 8px
+            rgba(255, 255, 255, 0.08),
+          /* leve brilho externo */ 0 2px 24px 0px rgba(0, 0, 0, 0.85); /* sombra extra para profundidade */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
       .image-container:hover {
         transform: scale(1.05);
-        box-shadow: 0 7px 25px rgba(255, 255, 255, 0.2),
-          0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra hover também ajustada */
+        box-shadow: 0 16px 64px 0px rgba(0, 0, 0, 1),
+          /* sombra preta ainda mais intensa */ 0 0px 100px 0px
+            rgba(255, 255, 255, 0.28),
+          /* brilho branco mais forte */ 0 0px 0px 12px
+            rgba(255, 255, 255, 0.12),
+          /* brilho externo mais visível */ 0 4px 32px 0px rgba(0, 0, 0, 0.92); /* sombra extra para profundidade */
       }
 
       .image-container img {
