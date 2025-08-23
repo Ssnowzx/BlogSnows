@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- Particle.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog - Uma dança entre abismo e potência</title>
@@ -108,6 +110,18 @@
   </head>
 
   <body>
+    <!-- Particle.js background -->
+    <div
+      id="particles-js"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+      "
+    ></div>
     <div
       class="image-container"
       id="imageContainer3"
@@ -115,12 +129,33 @@
       role="button"
       aria-pressed="false"
       aria-label="Abrir reflexão A Engenharia da Ilusão"
-      style="margin-bottom: 1rem; margin-top: 3rem"
+      style="
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+        z-index: 1;
+        position: relative;
+      "
     >
       <img
         src="sociedade.png"
         alt="Imagem relacionada à reflexão A Engenharia da Ilusão"
       />
+    </div>
+
+    <div
+      class="image-container"
+      id="imageContainerPlanetaC"
+      tabindex="0"
+      role="button"
+      aria-label="Ir para Planeta C"
+      style="
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+        z-index: 1;
+        position: relative;
+      "
+    >
+      <img src="planetaC.png" alt="Ir para Planeta C" />
     </div>
 
     <!-- Apenas a imagem e modal do texto principal são mantidos -->
@@ -250,6 +285,50 @@
     </div>
 
     <script>
+      // Inicializa Particle.js diretamente no JS para evitar problemas de CORS
+      window.onload = function () {
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 250,
+              density: { enable: true, value_area: 1200 },
+            },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.7, random: true },
+            size: { value: 2, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.3,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" },
+              resize: true,
+            },
+            modes: {
+              repulse: { distance: 100, duration: 0.4 },
+              push: { particles_nb: 4 },
+            },
+          },
+          retina_detect: true,
+        });
+      };
       // Popup modal logic
       // Apenas lógica para a imagem e modal principal
       const imageContainer3 = document.getElementById("imageContainer3");
@@ -275,6 +354,20 @@
         if (e.target === modalOverlay3) {
           modalOverlay3.style.display = "none";
           imageContainer3.setAttribute("aria-pressed", "false");
+        }
+      });
+
+      // Lógica para a caixa do Planeta C
+      const imageContainerPlanetaC = document.getElementById(
+        "imageContainerPlanetaC"
+      );
+      imageContainerPlanetaC.addEventListener("click", () => {
+        window.open("https://planeta-c.vercel.app/", "_blank");
+      });
+      imageContainerPlanetaC.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          window.open("https://planeta-c.vercel.app/", "_blank");
         }
       });
     </script>
